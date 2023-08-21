@@ -107,6 +107,31 @@ files = [
 ]
 
 [[package]]
+name = "pytelegrambotapi"
+version = "4.13.0"
+description = "Python Telegram bot api."
+optional = false
+python-versions = "*"
+files = [
+    {file = "pyTelegramBotAPI-4.13.0.tar.gz", hash = "sha256:b4a42b2c304fba36e3dbb3648193486941dc0e8131886ed7c5e147465db24db0"},
+]
+
+[package.dependencies]
+requests = "*"
+
+[package.extras]
+aiohttp = ["aiohttp"]
+aioredis = ["aioredis"]
+coloredlogs = ["coloredlogs"]
+fastapi = ["fastapi"]
+json = ["ujson"]
+pil = ["Pillow"]
+psutil = ["psutil"]
+redis = ["redis (>=3.4.1)"]
+uvicorn = ["uvicorn"]
+watchdog = ["watchdog"]
+
+[[package]]
 name = "requests"
 version = "2.31.0"
 description = "Python HTTP for Humans."
@@ -128,6 +153,21 @@ socks = ["PySocks (>=1.5.6,!=1.5.7)"]
 use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
+name = "telebot"
+version = "0.0.5"
+description = "A Telegram bot library, with simple route decorators."
+optional = false
+python-versions = "*"
+files = [
+    {file = "telebot-0.0.5-py3-none-any.whl", hash = "sha256:50327c240243480d40ade4ea5bea4f464bf57d4ff000ea669fcd705396074863"},
+    {file = "telebot-0.0.5.tar.gz", hash = "sha256:848a5885b57247b65edd0e92647b4372ebd8d41611dca3f344788c11deac2571"},
+]
+
+[package.dependencies]
+pyTelegramBotAPI = "*"
+requests = "*"
+
+[[package]]
 name = "urllib3"
 version = "2.0.4"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
@@ -147,4 +187,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "2f1223dc33af6f607d099d2c766dc1d8ee77f935b3e05f7b742f85c68234a0e0"
+content-hash = "e9578ccf521a7bf6065719cf65f76962a355301d643648e9c62bf58d54d1f51f"
